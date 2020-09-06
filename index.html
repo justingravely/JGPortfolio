@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/27a12b435e.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Justin Gravely Portfolio</title>
+</head>
+<body>
+  <header>
+    <nav id="nav">
+      <div class="line">
+        <a href="#welcome" id="nav-link">Welcome</a>
+        <a href="#hero"><img src="https://cdn.discordapp.com/attachments/736393082831896590/736749866658562078/whomsete.png" alt="Picture of Justin"></a>
+        <a href="#contact" id="nav-link">Contact</a>
+      </div>  
+      <a href="#projects" class="below" id="nav-link">Projects</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-stuff">
+      <h1>Hey, I'm Justin</h1>
+      <p>a web developer</p>
+    </div>
+  </section>
+
+
+  <div class="design"></div>
+
+  <section class="first">
+    <div class="welcome" id="welcome">
+      <h1>Welcome</h1>
+      <p>I'm a web developer & designer from North Carolina with a passion for user friendly design that looks good on both mobile and desktop</p>
+      <div class="welcome-icons">
+        <i id="device" class="fas fa-mobile-alt"></i>
+        <i id="checks" class="fas fa-check"></i>
+        <i id="device" class="fas fa-desktop"></i>
+        <i id="checks" class="fas fa-check"></i>
+      </div>  
+      <div class="dots">
+        <i class="fas fa-ellipsis-h"></i><i class="fas fa-ellipsis-h"></i>
+      </div>
+    </div>
+    <div class="projects-info">
+      <h1>Projects</h1>
+        <div class="check-marks">
+          <p><i id ="official" class="fas fa-meteor"></i> = Official</p>
+          <p><i id ="personal" class="fas fa-meteor"></i> = Personal</p>
+        </div>
+      </div>
+    <div class="projects" id="projects">
+        <div class="projects-wrapper">
+          <div class="wrapper-wrapper">
+          <div class="project-wrap">
+            <a href="https://codepen.io/WaffleDoggy/full/RwrXRwV" target=" "><i id ="official" class="fas fa-meteor"></i><img src="https://cdn.discordapp.com/attachments/736393082831896590/740967950680457266/dws.png"></a>
+          </div>
+          <div class="project-wrap">
+            <a href="https://codepen.io/WaffleDoggy/full/RwrXRwV" target=" "><i id ="personal" class="fas fa-meteor"></i><img src="https://cdn.discordapp.com/attachments/736393082831896590/740967950680457266/dws.png"></a>
+          </div>
+          <div class="project-wrap">
+            <a href="https://codepen.io/WaffleDoggy/full/RwrXRwV" target=" "><i id ="personal" class="fas fa-meteor"></i><img src="https://cdn.discordapp.com/attachments/736393082831896590/740967950680457266/dws.png"></a>
+          </div>
+          <div class="project-wrap">
+            <a href="https://codepen.io/WaffleDoggy/full/RwrXRwV" target=" "><i id ="personal" class="fas fa-meteor"></i><img src="https://cdn.discordapp.com/attachments/736393082831896590/740967950680457266/dws.png"></a>
+          </div>
+          <div class="project-wrap">
+            <a href="https://codepen.io/WaffleDoggy/full/RwrXRwV" target=" "><i id ="personal" class="fas fa-meteor"></i><img src="https://cdn.discordapp.com/attachments/736393082831896590/740967950680457266/dws.png"></a>
+          </div>
+          <div class="project-wrap">
+            <a href="https://codepen.io/WaffleDoggy/full/RwrXRwV" target=" "><i id ="personal" class="fas fa-meteor"></i><img src="https://cdn.discordapp.com/attachments/736393082831896590/740967950680457266/dws.png"></a>
+          </div>
+          <div class="project-wrap">
+            <a href="https://codepen.io/WaffleDoggy/full/RwrXRwV" target=" "><i id ="personal" class="fas fa-meteor"></i><img src="https://cdn.discordapp.com/attachments/736393082831896590/740967950680457266/dws.png"></a>
+          </div>
+          <div class="project-wrap">
+            <a href="https://codepen.io/WaffleDoggy/full/RwrXRwV" target=" "><i id ="personal" class="fas fa-meteor"></i><img src="https://cdn.discordapp.com/attachments/736393082831896590/740967950680457266/dws.png"></a>
+          </div>
+          <div class="project-wrap">
+            <a href="https://codepen.io/WaffleDoggy/full/RwrXRwV" target=" "><i id ="personal" class="fas fa-meteor"></i><img src="https://cdn.discordapp.com/attachments/736393082831896590/740967950680457266/dws.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Initial state
+    var scrollPos = 0;
+    // adding scroll event
+    window.addEventListener('scroll', function(){
+      // detects new state and compares it with the new one
+      if ((document.body.getBoundingClientRect()).top > scrollPos)
+      document.getElementById("nav").style.opacity = "1";   //To hide the element.
+      else
+      document.getElementById("nav").style.opacity = "0";   //To hide the element.;
+      // saves the new position for iteration.
+      scrollPos = (document.body.getBoundingClientRect()).top;
+    });
+    </script>
+</body>
+</html>

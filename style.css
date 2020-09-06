@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: rgb(08, 0, 55);
+  font-family: monospace;
+}
+
+a {
+  color: white;
+}
+
+/* nav */
+header {
+  height: 5.5em;
+  padding-top: 1em;
+}
+
+nav {
+  z-index: 3;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 20em;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  font-size: 1.2em;
+  border-bottom: 2px solid rgba(255, 0, 255, 0.452);
+  border-bottom-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+  height: 8em;
+  transition: 0.33s;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(255,42,153,0.7231267507002801) 0%, rgba(86,65,117,0.8015581232492998) 0%, rgba(93,72,122,0) 100%, rgba(255,232,253,1) 100%, rgba(182,127,55,1) 100%, rgba(255,251,98,1) 100%, rgba(0,212,255,1) 100%, rgba(86,65,117,0) 100%);
+}
+
+nav:hover {
+  background-color: rgba(86, 65, 117, 0.815);
+}
+
+header img {
+  width: 4em;
+  border-radius: 50%;
+  border: 2px solid rgba(41, 41, 41, 0.877);
+  transition: 0.3s;
+}
+
+header img:hover {
+  border: 2px solid rgb(255, 179, 245);
+}
+
+header .line {
+  display: flex;
+  width: fit-content;
+  margin: auto;
+  margin-top: 0.4em;
+}
+
+header .line a {
+  margin: auto;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+header nav .below {
+  margin: auto;
+  margin-top: -0.7em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+#nav-link {
+  border: 1px solid rgba(43, 43, 43, 0.493);
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+#nav-link:hover {
+  border: 1px solid rgb(255, 179, 245);
+}
+
+/* section */
+.hero {
+  z-index: 0;
+  background-image: url("https://cdn.discordapp.com/attachments/736393082831896590/751515613712744458/spagos.png");
+  background-size: cover;
+  background-position: center;
+  height: 60em;
+  margin: auto;
+  margin-top: -5.5em;
+  display: flex;
+}
+
+.hero-stuff {
+  margin: auto;
+  margin-bottom: 26em;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.493);
+  animation: hero;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}
+
+@keyframes hero {
+  0% {
+    margin-bottom: 0em;
+    opacity: 0;
+  } 100% {
+    margin-bottom: 26em;
+    opacity: 1;
+  }
+}
+
+.hero h1 {
+  margin: auto;
+  color: white;
+  font-size: 5em;
+}
+
+.hero p {
+  text-align: center;
+  font-size: 2em;
+}
+
+/* design */
+.design {
+  height: 2em;
+  background-color: rgb(65, 49, 88);
+  width: 15em;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin: auto;
+  border-top: 2px solid rgba(255, 0, 255, 0.452);
+}
+
+/* first */
+.first {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: rgb(52, 39, 70);
+}
+
+.welcome {
+  margin: auto;
+  font-size: 1.5em;
+  margin-top: 0em;
+  width: 30em;
+  text-align: center;
+  border-left: 2px solid rgba(255, 0, 255, 0.452);
+  border-right: 2px solid rgba(255, 0, 255, 0.452);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 1px 1px 5px rgba(43, 43, 43, 0.493);
+  background-color: rgb(65, 49, 88);
+}
+
+.welcome h1 {
+  margin: auto;
+  margin-top: -1em;
+  width: 6.7em;
+  height: 2em;
+  border-radius: 50px;
+  margin-bottom: 0.5em;
+  padding-top: 0.4em;
+  box-shadow: 1px 1px 5px rgb(43, 43, 43);
+  background-color: rgb(65, 49, 88);
+  border-top: 2px solid rgba(255, 0, 255, 0.692);
+}
+
+.welcome p {
+  padding-top: 0.7em;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  height: 5em;
+  width: 25em;
+}
+
+.welcome-icons #device {
+  font-size: 3em;
+  margin: 0.3em;
+}
+
+.welcome-icons i {
+  padding: 0.3em;
+}
+
+.welcome-icons #checks {
+  font-size: 1em;
+  position: absolute;
+  margin-top: 3.5em;
+  margin-left: -2em;
+  color: rgb(255, 0, 255);
+}
+
+.welcome-icons #checks:last-child {
+  margin-left: -1.8em;
+}
+
+/* projects info */
+.projects-info {
+  border-top: 2px solid rgba(255, 0, 255, 0.452);
+  border-radius: 50px;
+  margin: auto;
+  margin-top: 7em;
+  width: 20em;
+  text-align: center;
+  box-shadow: 1px 1px 5px rgba(43, 43, 43, 0.493);
+  background-color: rgb(65, 49, 88);
+  z-index: 2;
+}
+
+.check-marks {
+  display: flex;
+}
+
+.check-marks p {
+  padding: 0.77em;
+  margin: auto;
+}
+
+#official {
+  color: rgba(226, 89, 153, 0.842);
+  transition: 0.3s;
+}
+
+#personal {
+  color: rgba(255, 255, 255, 0.849);
+  transition: 0.3s;
+}
+
+.project-wrap a:hover #official {
+  color: rgba(255, 255, 255, 0);
+}
+
+.project-wrap a:hover #personal {
+  color: rgba(255, 255, 255, 0);
+}
+
+.dots {
+  margin-top: 3em;
+}
+
+.dots i {
+  font-size: 1.5em;
+  color: rgba(50, 38, 68, 0.562);
+}
+
+/* first projects */
+.projects {
+  margin: auto;
+  margin-top: -2em;
+  font-size: 1.2em;
+  background-color: rgb(65, 49, 88);
+  border-radius: 50px;
+}
+
+.projects-wrapper {
+  width: 40em;
+  margin: auto;
+  border-left: 2px solid rgba(255, 0, 255, 0.452);
+  border-right: 2px solid rgba(255, 0, 255, 0.452);
+  border-radius: 50px;
+  padding: 1em;
+  padding-top: 5em;
+  box-shadow: 1px 1px 5px rgba(43, 43, 43, 0.493);
+}
+
+.project-wrap {
+  margin: 0em;
+  height: 98%;
+}
+
+.project-wrap i {
+  position: absolute;
+  margin-left: 1.1em;
+  margin-top: 1.1em;
+  font-size: 3em;
+}
+
+.wrapper-wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
+  padding: 0.5em;
+  border-radius: 50px;
+  background-color: rgb(61, 46, 82);
+}
+
+.projects a {
+  width: 20px;
+  margin: auto;
+}
+
+.project-wrap:hover {
+  border: 3px solid rgba(255, 0, 255, 0.493);
+  border-radius: 25%;
+}
+
+.projects a img {
+  width: 100%;
+  border-radius: 25%;
+  box-shadow: 2px 2px 5px rgba(43, 43, 43, 0.493);
+  margin: 0;
+}
+
+
