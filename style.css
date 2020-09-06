@@ -285,8 +285,8 @@ header nav .below {
 
 .project-wrap i {
   position: absolute;
-  margin-left: 1.1em;
-  margin-top: 1.1em;
+  margin-left: 2em;
+  margin-top: 2em;
   font-size: 3em;
 }
 
@@ -316,4 +316,104 @@ header nav .below {
   margin: 0;
 }
 
+/* phone */
+@media (max-width: 655px) {
+  .hero h1 {
+    font-size: 2.5em;
+  }
+
+  .welcome {
+    width: 90%;
+  }
+
+  .welcome p {
+    width: 90%;
+    font-size: 0.9em;
+  }
+
+  .welcome-icons #device {
+    margin-top: 1em;
+    font-size: 2.5em;
+  }
+
+  .welcome-icons #checks {
+    margin-top: 4.5em;
+    margin-left: -2em;
+  }
+
+  .welcome-icons #checks:last-child {
+    margin-left: -1.6em;
+  }
+
+  /* projects */
+
+  .wrapper-wrapper {
+    grid-template-columns: repeat(1, minmax(50px, 1fr));
+  }
+
+  .projects {
+    width: 90%;
+  }
+
+  .projects-wrapper {
+    width: 100%;
+  }
+
+  .project-wrap i {
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 50%;
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 655px) {
+  .hero h1 {
+    font-size: 3.5em;
+  }
+
+  .welcome {
+    width: 90%;
+  }
+
+  .welcome p {
+    width: 90%;
+    font-size: 1em;
+  }
+
+  .welcome-icons #device {
+    margin-top: 1em;
+    font-size: 3em;
+  }
+
+  .welcome-icons #checks {
+    margin-top: 5.7em;
+    margin-left: -2.3em;
+  }
+
+  .welcome-icons #checks:last-child {
+    margin-left: -2em;
+  }
+
+  /* projects */
+
+  .wrapper-wrapper {
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
+  }
+
+  .projects {
+    width: 90%;
+  }
+
+  .projects-wrapper {
+    width: 100%;
+  }
+
+  .project-wrap i {
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 25%;
+    font-size: 3em;
+  }
+}
 
