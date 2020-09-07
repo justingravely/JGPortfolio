@@ -28,12 +28,14 @@ nav {
   left: 0;
   right: 0;
   top: 0;
-  width: 20em;
+  width: 39.45em;
   display: flex;
   flex-direction: column;
   margin: auto;
   font-size: 1.2em;
   border-bottom: 2px solid rgba(255, 0, 255, 0.452);
+  border-left: 2px solid rgba(255, 0, 255, 0.452);
+  border-right: 2px solid rgba(255, 0, 255, 0.452);
   border-bottom-left-radius: 75px;
   border-bottom-right-radius: 75px;
   height: 8em;
@@ -79,8 +81,10 @@ header nav .below {
 
 #nav-link {
   border: 1px solid rgba(43, 43, 43, 0.493);
+  background-color: rgb(86, 65, 117);
   border-radius: 15px;
   transition: 0.5s;
+  text-shadow: 1px 1px 1px black;
 }
 
 #nav-link:hover {
@@ -97,6 +101,7 @@ header nav .below {
   margin: auto;
   margin-top: -5.5em;
   display: flex;
+  flex-direction: column;
 }
 
 .hero-stuff {
@@ -301,6 +306,15 @@ header nav .below {
   z-index: 2;
 }
 
+.projects .projects-description {
+  position: absolute;
+  margin-top: 3em;
+  width: 19em;
+  left: 50%;
+  margin-left: -9.5em;
+  color: rgba(255, 255, 255, 0.671);
+}
+
 .check-marks {
   display: flex;
 }
@@ -345,10 +359,11 @@ header nav .below {
   font-size: 1.2em;
   background-color: rgb(65, 49, 88);
   border-radius: 50px;
+  margin-bottom: 6em;
 }
 
 .projects-wrapper {
-  width: 40em;
+  width: 39.6em;
   margin: auto;
   border-left: 2px solid rgba(255, 0, 255, 0.452);
   border-right: 2px solid rgba(255, 0, 255, 0.452);
@@ -396,6 +411,48 @@ header nav .below {
   margin: 0;
 }
 
+/* contact */
+
+.bottom-design {
+  position: absolute;
+  height: 5em;
+  background-color: rgb(65, 49, 88);
+  width: 15em;
+  border-radius: 50px;
+  border-top: 2px solid rgba(255, 0, 255, 0.452);
+  margin-top: -2.5em;
+  left: 50%;
+  margin-left: -7.5em;
+  display: flex;
+}
+
+.bottom-design h2 {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  font-size: 2em;
+}
+
+.contact {
+  height: 60em;
+  background-image: url("https://cdn.discordapp.com/attachments/736393082831896590/752343643599405117/spagos2.png");
+  background-size: cover;
+  display: flex;
+}
+
+.contact-content {
+  margin: auto;
+}
+
+/* footer */
+footer {
+  display: flex;
+  height: 10em;
+}
+
+#freevector {
+  margin: auto;
+}
 /* phone *//* phone *//* phone *//* phone *//* phone *//* phone */
 @media (max-width: 655px) {
   .hero h1 {
@@ -463,6 +520,10 @@ header nav .below {
     font-size: 0.5em;
   }
 
+  .projects-description {
+    font-size: 0.9em;
+  }
+
 
   /* skills */
 
@@ -478,6 +539,10 @@ header nav .below {
   #percents {
     width: 20%;
     text-align: center;
+  }
+
+  #placeholder:last-child {
+    display: none;
   }
 }
 
@@ -531,10 +596,20 @@ header nav .below {
     font-size: 3em;
   }
 
+  #placeholder:last-child {
+    display: none;
+  }
+
   /* skills */
   
   .welcome .skills {
     width: 60%;
+  }
+}
+
+@media (max-width: 610px) {
+  nav {
+    width: 90%;
   }
 }
 
