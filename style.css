@@ -154,7 +154,9 @@ header nav .below {
   flex-direction: column;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  background-color: rgb(52, 39, 70);
+  background-image: url("https://cdn.discordapp.com/attachments/736393082831896590/752725284909875292/salamanddddd3.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .welcome {
