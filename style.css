@@ -277,11 +277,7 @@ header nav .below {
   border-bottom: 3px solid rgba(255, 0, 255, 0.603);
   width: fit-content;
   margin: auto;
-  margin-bottom: -0.3em;
-}
-
-.skill-extra {
-  font-size: 0.6em;
+  margin-bottom: 0.3em;
 }
 
 #percents {
@@ -442,19 +438,122 @@ header nav .below {
 
 .contact-content {
   margin: auto;
+  display: flex;
 }
+
+.contact-content a {
+  cursor: pointer;
+}
+
+.contact-wrap {
+  background-color: rgba(0, 0, 53, 0.384);
+  height: 12em;
+  width: 12em;
+  border-radius: 50%;
+  display: flex;
+  margin-left: 2em;
+  margin-right: 2em;
+  flex-direction: column;
+}
+
+.spinny-boy {
+  position: absolute;
+  border: 3px outset rgba(252, 64, 252, 0.534);
+  height: 12em;
+  width: 12em;
+  border-radius: 50%;
+  display: flex;
+  margin-left: 2em;
+  margin-right: 2em;
+  flex-direction: column;
+  animation-name: spin;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+.contact-wrap i {
+  margin: auto;
+  font-size: 4em;
+  transition: 0.33s;
+}
+
+.contact-wrap p {
+  position: absolute;
+  opacity: 0;
+  margin-left: 1.5em;
+  margin-top: 2.3em;
+  transition: 0.33s;
+  font-size: 2em;
+  transition: 0.33s;
+}
+
+.contact-wrap #github {
+  margin-left: 1.25em;
+}
+
+.contact-content a:hover .contact-wrap i {
+  opacity: 0;
+}
+
+.contact-content a:hover .contact-wrap p {
+  opacity: 1;
+}
+
+#githubText, #phoneNumber, #emailText {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+
+
 
 /* footer */
 footer {
+  border-top: 7px solid rgb(86, 65, 117);
   display: flex;
   height: 10em;
 }
 
-#freevector {
+.footer-wrap {
+  margin: auto;
+  display: flex;
+  width: 30%;
+}
+
+.footer-info {
   margin: auto;
 }
+
+.footer-info li, #freevector {
+  margin-top: 0.3em;
+  color :grey;
+}
+
+#freevector {
+  margin: auto;
+  text-decoration: underline;
+}
+
+#freevector:hover {
+  color: pink;
+}
+
 /* phone *//* phone *//* phone *//* phone *//* phone *//* phone */
 @media (max-width: 655px) {
+  .hero {
+    height: 50em;
+  }
+
   .hero h1 {
     font-size: 2.5em;
   }
@@ -544,6 +643,52 @@ footer {
   #placeholder:last-child {
     display: none;
   }
+
+  /* contact */
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-content a {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  /* footer */
+footer {
+  display: flex;
+  height: 10em;
+  text-align: center;
+  padding: 1em;
+}
+
+.footer-wrap {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer-info {
+  margin: auto;
+}
+
+.footer-info li, #freevector {
+  margin-top: 0.3em;
+  color :grey;
+}
+
+.footer-info p {
+}
+
+#freevector {
+  text-decoration: underline;
+}
+
+#freevector:hover {
+  color: pink;
+}
 }
 
 /* tablet *//* tablet *//* tablet *//* tablet *//* tablet */

@@ -39,9 +39,9 @@
         <i id="device" class="fas fa-desktop"></i>
         <i id="checks" class="fas fa-check"></i>
       </div> 
-      <p>My passion is to help you get online hassle-free using the latest technologies. Whether you need a business website, a personal blog, or even an online store, I've got you covered.</p> 
+      <p>I'm passionate about helping you get online hassle-free with a clean finish. Whether you need a business website, a personal blog, or even an online store, I've got you covered.</p> 
         <i id="store" class="fas fa-store-alt"></i>
-      <p>Coming from a humble background of steady perseverance, I'm excited to share my one and only professional passion openly, honestly, and to the best of my ability as I continue to learn.
+      <p>Coming from a wandering background to now steady perseverance, I'm excited to share this skill-set to the best of my ability as I continue to learn.
       </p>
 
     <div class="clockify-wrapper">
@@ -55,7 +55,6 @@
     </div>
 
       <h2>Skill Mastery</h2>
-      <p class="skill-extra">(partially by my own standards)</p>
       <div class="skills">
         <ul>
           <li>Html & CSS:</li>
@@ -284,17 +283,93 @@ img.hover-shadow {
 
   <section class="contact">
     <div class="contact-content">
-      <ul>
-        <li>Email</li>
-        <li>Phone</li>
-        <li>github</li>
-      </ul>
+      <a onclick="myFunctionEmail()" onmouseout="reset()">
+        <div class="spinny-boy"></div>
+          <div class="contact-wrap">
+            <i class="fas fa-envelope"></i>
+            <p id="mail">Email</p>
+            <input type="text" value="justin42653@yahoo.com" id="emailText">
+          </div>
+      </a>  
+      <a onclick="myFunctionPhone()" onmouseout="reset()">
+        <div class="spinny-boy"></div>
+        <div class="contact-wrap">
+          <i class="fas fa-mobile-alt"></i>
+          <p id="phone">Phone</p>
+          <input type="text" value="919-753-3942" id="phoneNumber">
+        </div>
+      </a>  
+      <a onclick="myFunctionGitHub()" onmouseout="reset()">
+        <div class="spinny-boy"></div>
+        <div class="contact-wrap">
+          <i class="fab fa-github"></i>
+          <p id="github">github</p>
+          <input type="text" value="https://github.com/justingravely" id="githubText">
+        </div>
+      </a>  
     </div>
   </section>
 
   <footer>
-    <a id="freevector" href="https://www.freevector.com/starry-night-view-29534" target="_blank">Mountain Art from FreeVector.com</a>
+  <div class="footer-wrap">
+    <div class="footer-info">
+      <p>Simple Contacts</p>
+      <ul>
+        <li>Justin42653@yahoo.com</li>
+        <li>919-753-3942</li>
+        <li>github.com/justingravely</li>
+      </ul>
+    </div>
+    <div class="footer-info">
+      <p>Credit</p>
+      <a id="freevector" href="https://www.freevector.com/starry-night-view-29534" target="_blank">art from FreeVector.com</a>
+    </div>
+  </div>
   </footer>
+
+  <!-- clipboards -->
+  <script>
+    function myFunctionGitHub() {
+      var copyText = document.getElementById("githubText");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999)
+      document.execCommand("copy");
+      document.getElementById("github").innerHTML = "Copied";
+    }
+
+    function myFunctionEmail() {
+      var copyText = document.getElementById("emailText");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999)
+      document.execCommand("copy");
+      document.getElementById("mail").innerHTML = "Copied";
+      document.getElementById("mail").style.marginLeft = "1.2em";
+    }
+
+    function myFunctionPhone() {
+      var copyText = document.getElementById("phoneNumber");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999)
+      document.execCommand("copy");
+      document.getElementById("phone").innerHTML = "Copied";
+      document.getElementById("phone").style.marginLeft = "1.2em";
+    }
+
+    function reset(){
+      // github
+      document.getElementById("github").innerHTML = "github";
+      document.getElementById("phone").style.marginLeft = "1.25em";
+
+      // email
+      document.getElementById("mail").innerHTML = "Email";
+      document.getElementById("mail").style.marginLeft = "1.5em";
+
+      // phone
+      document.getElementById("phone").innerHTML = "Phone";
+      document.getElementById("phone").style.marginLeft = "1.5em";
+    }
+
+  </script>
 
   <!-- nav fade -->
   <script>
@@ -357,3 +432,7 @@ img.hover-shadow {
       </script>
 </body>
 </html>
+
+
+
+
