@@ -354,7 +354,7 @@ header nav .below {
   text-align: center;
   box-shadow: 1px 1px 5px rgba(43, 43, 43, 0.747);
   background-color: rgb(65, 49, 88);
-  z-index: 2;
+  z-index: 1;
 }
 
 .projects .projects-description {
