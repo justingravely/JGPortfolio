@@ -660,7 +660,7 @@ footer {
   /* footer */
 footer {
   display: flex;
-  height: 10em;
+  height: 15em;
   text-align: center;
   padding: 1em;
 }
