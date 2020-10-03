@@ -25,6 +25,9 @@
       <h1>Hey, I'm Justin</h1>
       <p>a web developer</p>
     </div>
+    <div class="arrow-wrapper" id="arrow">
+      <i class="fas fa-arrow-alt-circle-down"></i>
+    </div>
   </section>
 
   <div class="design"></div>
@@ -46,11 +49,11 @@
     <div class="clockify-wrapper">
       <div class="row">
         <div class="column">
-          <img src="https://cdn.discordapp.com/attachments/736393082831896590/752754705301504010/clocnky.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          <img src="https://cdn.discordapp.com/attachments/736393082831896590/762049992918564884/seeeee.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
         </div>
       </div>
-      <a  id="mobile-image" href="https://cdn.discordapp.com/attachments/736393082831896590/752754705301504010/clocnky.png"><img src="https://cdn.discordapp.com/attachments/736393082831896590/752754705301504010/clocnky.png" alt="visual of time studied"></a>
-      <p id="clockify">Progress recorded with <a href="https://clockify.me/" target="_blank">clockify</a> 9/6/2020</p>
+      <a  id="mobile-image" href="https://cdn.discordapp.com/attachments/736393082831896590/762049992918564884/seeeee.png"><img src="https://cdn.discordapp.com/attachments/736393082831896590/762049992918564884/seeeee.png" alt="visual of time studied"></a>
+      <p id="clockify">Progress recorded with <a href="https://clockify.me/" target="_blank">clockify</a> 10/3/2020</p>
     </div>
 
       <h2>Skill Mastery</h2>
@@ -58,7 +61,7 @@
       <div class="skills">
         <div class="skill-wrap">
           <p>HTML & CSS</p>
-          <div class="percent"><div class="percentBar"><h4>99%</h4></div></div>
+          <div class="percent"><div class="percentBar"><h4>90%</h4></div></div>
         </div>
         <div class="skill-wrap">
           <p>Javascript</p>
@@ -230,7 +233,7 @@ img.hover-shadow {
       
           <div class="mySlides">
             <div class="numbertext">1</div>
-            <img src="https://cdn.discordapp.com/attachments/736393082831896590/752754705301504010/clocnky.png" style="width:100%">
+            <img src="https://cdn.discordapp.com/attachments/736393082831896590/762049992918564884/seeeee.png" style="width:100%">
           </div>
 
         </div>
@@ -245,6 +248,9 @@ img.hover-shadow {
           <div class="wrapper-wrapper">
           <div class="project-wrap">
             <a href="http://heavenlyhorsehealth.com/" target=" "><i id ="official" class="fas fa-meteor"></i><img src="https://cdn.discordapp.com/attachments/736393082831896590/752330125332185198/unknown.png"></a>
+          </div>
+          <div class="project-wrap" id="placeholder">
+            <a href="https://justingravely.github.io/FeM-Pricing-Component/" target=" "><i id ="personal" class="fas fa-meteor"></i><img src="https://cdn.discordapp.com/attachments/736393082831896590/762050870506291220/unknown.png"></a>
           </div>
           <div class="project-wrap">
             <a href="https://codepen.io/WaffleDoggy/full/RwrXRwV" target=" "><i id ="personal" class="fas fa-meteor"></i><img src="https://cdn.discordapp.com/attachments/736393082831896590/740967950680457266/dws.png"></a>
@@ -266,9 +272,6 @@ img.hover-shadow {
           </div>
           <div class="project-wrap">
             <a href="https://codepen.io/WaffleDoggy/full/oNbVYwe" target=" "><i id ="personal" class="fas fa-meteor"></i><img src="https://cdn.discordapp.com/attachments/736393082831896590/740967947891376148/techni.png"></a>
-          </div>
-          <div class="project-wrap" id="placeholder">
-            <a href="#projects" target=" "><img src="https://cdn.discordapp.com/attachments/736393082831896590/752337261793771650/PH.png"></a>
           </div>
         </div>
         <div class="dotsTwo">
@@ -386,6 +389,21 @@ img.hover-shadow {
       // saves the new position for iteration.
       scrollPos = (document.body.getBoundingClientRect()).top;
     });
+    </script>
+  <!-- arrow fade -->
+  <script>
+  // Initial state
+  var scrollPos = 0;
+  // adding scroll event
+  window.addEventListener('scroll', function(){
+    // detects new state and compares it with the new one
+    if ((document.body.getBoundingClientRect()).top > scrollPos)
+    document.getElementById("arrow").style.opacity = "1";   //To hide the element.
+    else
+    document.getElementById("arrow").style.opacity = "0";   //To hide the element.;
+    // saves the new position for iteration.
+    scrollPos = (document.body.getBoundingClientRect()).top;
+  });
     </script>
     
     <!-- lightbox -->

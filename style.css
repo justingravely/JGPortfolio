@@ -136,6 +136,35 @@ header nav .below {
   font-size: 2em;
 }
 
+.hero .arrow-wrapper {
+  position: absolute;
+  width: 5em;
+  display: flex;
+  left: 50%;
+  margin-left: -2.5em;
+  top: 33em;
+  animation: arrow;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.hero i {
+  font-size: 2em;
+  margin: auto;
+}
+
+@keyframes arrow {
+  0% {
+    top: 33em;
+  } 50% {
+    top: 35em;
+  } 100% {
+    top: 33em;
+  }
+}
+
 /* design */
 .design {
   height: 2em;
@@ -306,7 +335,7 @@ header nav .below {
   border-radius: 25px;
   margin: auto;
   margin-left: 0;
-  width: 99%;
+  width: 90%;
 }
 .skill-wrap .percentBarTwo {
   background-color: rgba(252, 64, 252, 0.575);
@@ -623,6 +652,10 @@ footer {
 
   .hero h1 {
     font-size: 2.5em;
+  }
+
+  .hero .arrow-wrapper {
+    opacity: 1;
   }
 
   .welcome {
